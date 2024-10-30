@@ -1,0 +1,1 @@
+This folder contains the simulation data for different scenarios compressed into one single file using the .zip format. The file must be decompressed to the current "Simulation data" folder.
