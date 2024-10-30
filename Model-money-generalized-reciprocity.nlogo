@@ -186,8 +186,8 @@ end
 
 ; Create evolutionary updating routine:
 to evolve
-  ask one-of turtles [                                               ; in each time step a random agent updates their strategy by imitating another agent
-    set breed [breed] of rnd:weighted-one-of turtles [fitness]        ; for any agent, the probability to be chosen as imitation target is proportional to the share of the agent's fitness in the total fitness accumulated by all agents during this time step
+  ask one-of turtles [                                               ; in each time step, a random agent is selected and given the possibility to change its strategy (breed)
+    set breed [breed] of rnd:weighted-one-of turtles [fitness]        ; roulette-wheel selection process. Strategies with higher in-round fitness are more likely to be selected
   ]
 end
 
@@ -729,7 +729,7 @@ Indirect Reciprocators:\nonly help if partner's reputation score is higher than 
 @#$#@#$#@
 ## WHAT IS IT?
 
-An evolutionary tournament simulation contrasting our novel "money" strategy to the two classic mechanisms in the evolution of cooperation (direct and indirect reciprocity).
+An evolutionary tournament simulation contrasting our novel "money" exchange strategy to the two classic mechanisms in the evolution of cooperation (direct and indirect reciprocity).
 
 ## HOW IT WORKS
 
@@ -745,38 +745,21 @@ There are five types of agents:
 
 ## HOW TO USE IT
 
-Benefits can be adjusted using 'the benefit-to-cost-ratio' slider (costs are set to 1 by default).
-The "evolutionary updating" switc turns evolution on or off.
+Benefits can be adjusted using the 'benefit-to-cost-ratio' slider (costs are set to 1 by default).
+The "evolutionary updating" switch turns evolution on or off.
 The input boxes define the initial population for each agent type.
 For indirect reciprocity and money, further parameters can be configured:
 - in indirect reciprocity, the initial reputation score of the agents
 - for money, the initial money balances across agents ("liquidity")
-Agents using the money and indirect reciprocity both make their decisions to cooperate based on a general threshold, which can also be configured.
+Agents using the money and indirect reciprocity both make their decisions to cooperate based on whether reputation scores and money balances are positive.
 
 
 ## THINGS TO NOTICE
 
-The monetary exchange strategy wins over for a wide variety of benefit-to-cost ratios, unlike the reciprocity strategies, that require fairly high benefits to have a chance to take hold. However, excess liquidity can compromise the success of money.
+The monetary exchange strategy is selected for a wide variety of benefit-to-cost ratios, unlike the reciprocity strategies, that require fairly high returns to cooperation to have a chance to take hold. 
+The relationship between overall cooperation rate and the evolutionary success of the monetary exchange strategy is mediated by liquidity.
+Higher liquidity promotes higher overall cooperation rates. However, excessively high liquidity can compromise the success of money.
 
-## THINGS TO TRY
-
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
-
-## EXTENDING THE MODEL
-
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
-
-## RELATED MODELS
-
-(models in the NetLogo Models Library and elsewhere which are of related interest)
-
-## CREDITS AND REFERENCES
-
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
 @#$#@#$#@
 default
 true
