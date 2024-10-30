@@ -15,9 +15,14 @@ globals [
   cooperations-this-turn                     ; counter tracking how many cooperative actions took place on the current turn
   cooperation-rate                           ; ratio of cooperative actions to total actions taken this turn
 ]
-; The main interface screen includes input fields for XXXX other global variables:
-; N N N N N
-; initial repliq
+; The main interface screen includes input fields for other global variables:
+; - the benefit-to-cost ratio for this instance of the simulation
+; - a switch turning evolutionary updating on or off
+; - a switch turning visualization on or off
+; - the initial number of agents following each strategy
+; - the initial reputation of agents
+; - a liquidity parameter that generates the initial distribution of money balances in the population
+
 
 ; Define agent types by strategy:
 breed [ cooperators cooperator ]
@@ -543,16 +548,16 @@ SWITCH
 235
 evolutionary-updating?
 evolutionary-updating?
-0
+1
 1
 -1000
 
 PLOT
 579
 641
-739
+834
 761
-variance of balances
+Variance of balances
 NIL
 NIL
 0.0
@@ -759,7 +764,6 @@ Agents using the money and indirect reciprocity both make their decisions to coo
 The monetary exchange strategy is selected for a wide variety of benefit-to-cost ratios, unlike the reciprocity strategies, that require fairly high returns to cooperation to have a chance to take hold. 
 The relationship between overall cooperation rate and the evolutionary success of the monetary exchange strategy is mediated by liquidity.
 Higher liquidity promotes higher overall cooperation rates. However, excessively high liquidity can compromise the success of money.
-
 @#$#@#$#@
 default
 true
