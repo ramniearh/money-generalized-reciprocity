@@ -2,7 +2,7 @@ Money as a mechanism of generalized reciprocity: R scripts and data files for th
 
 The "R script - reference scenario.R" file generates the plots used in the main manuscript (Figures 1, 2, 3 and 4).
 
-This script uses data files contain the results of the simulation experiment (see Simulated Data directory; files must be decompressed):
+This script uses the following data files, containing the results of the simulation experiment (see Simulated Data directory; files must be decompressed):
 	Main simulation data - money scenario.csv
 	Main simulation data - control scenario.csv
 
