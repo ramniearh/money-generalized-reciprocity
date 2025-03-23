@@ -114,7 +114,7 @@ to go
         cooperate
       ][
         defect
-        if member? current-partner memory [ set memory remove current-partner memory ]
+        if member? current-partner memory [ set memory remove current-partner memory ]  ;;; TEST ZONE - MOVING THIS TO DEFECTIONACTION (MEANS ALL AGENTS FORGET AFTER PUNISHING< NOT ONLY DR)
       ]
     ]
 
@@ -163,8 +163,16 @@ to cooperate
   set score score + 1                                                ; this agent's reputation increases
   set cooperations-this-turn cooperations-this-turn + 1              ; update the cooperation counter
 
-  iset balance balance + 1
-        ;ask current-partner [ set balance balance - 1 ]
+  ifelse CONTROL? [
+    if breed = moneys [  ;;;;;;;;;;;;;; moved here from MONEY action
+    set balance balance + 1
+    ask current-partner [ set balance balance - 1 ]
+  ]][
+    set balance balance + 1
+    ask current-partner [ set balance balance - 1 ]
+    ]
+
+
 
 
   if visualization? [ ask my-out-links [ set color 97 ] ]
@@ -177,6 +185,7 @@ to defect
     if not member? myself memory [
       set memory lput myself memory
     ]
+    if member? current-partner memory [ set memory remove current-partner memory ] ;;;;;;;;;;;;;;; moved to here from DR action
   ]
   if visualization? [ ask my-out-links [ set color 16 ] ]
 end
@@ -323,7 +332,7 @@ benefit-to-cost-ratio
 benefit-to-cost-ratio
 0
 100
-36.0
+5.0
 1
 1
 NIL
@@ -357,7 +366,7 @@ INPUTBOX
 158
 480
 initial-directs
-100.0
+0.0
 1
 0
 Number
@@ -368,7 +377,7 @@ INPUTBOX
 156
 601
 initial-indirects
-100.0
+0.0
 1
 0
 Number
@@ -735,6 +744,17 @@ Indirect Reciprocators:\nonly help if partner's reputation score is higher than 
 10
 2.0
 1
+
+SWITCH
+15
+135
+118
+168
+CONTROL?
+CONTROL?
+0
+1
+-1000
 
 @#$#@#$#@
 ## WHAT IS IT?

@@ -222,8 +222,8 @@ p_liquidity_bc2_end <- df_core_money %>%
 p_bc_liquidity_end <- df_core_money %>% 
   filter(step == 10000) %>% 
   filter(!liquidity %in% c(0, 0.5, .05, 0.1, 0.75, 1000, 10000)) %>% 
-  filter(!bc_ratio %in% c(1, 1.1, 1000)) %>% view()
-  pivot_wider(names_from = strategy, values_from = survivor_count) %>% view()
+  filter(!bc_ratio %in% c(1, 1.1, 1000)) %>% 
+  pivot_wider(names_from = strategy, values_from = survivor_count) %>% 
   mutate(most_prevalent = case_when(
     cooperators > 0.5 ~ "cooperators",
     defectors > 0.5 ~ "defectors",
