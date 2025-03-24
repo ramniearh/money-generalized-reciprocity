@@ -1,7 +1,7 @@
 ###PRELIMINARY VERSION - TO VALIDATE AND REVIEW###
 
 ## Money as a mechanism of generalized reciprocity:
-###### Charts for 1x1 strategy comparisons. Liquidity = 1, bc_ratio = 10
+###### Charts for 1x1 strategy comparisons. Plotted for liquidity = 1, bc_ratio = 10
 ## Simulated data for #DESCRIBE EXTRA SCENARIOS,
 ##### ## # # # ## Describe: in Main manuscript? in SM?
 
@@ -944,7 +944,7 @@ p_1x1_MxIR
 # 4. Draw state plots at 10000 steps (CxD template-only) ------------------------------------------------
 
 
-# 4.2 Plot summarized cooperation rates and strategy prevalence at 10000 steps for broad liquidity and benefit-to-cost ratios
+# 4.2 Plot summarized cooperation rates and strategy prevalence at 10000 steps for broad liquidity and benefit-to-cost ratios (PENDING - review entropy measure) ----
 
 # Cooperators against Defectors:
 
@@ -987,5 +987,5 @@ p_1x1_CxD_bc_liquidity_end
 
 
 
-# 5. Generate visualizations ----------------------------------------------
+
 

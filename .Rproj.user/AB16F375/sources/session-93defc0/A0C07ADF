@@ -3,7 +3,7 @@
     "path": "~/GitHub/money-generalized-reciprocity/Test zone-C/R Script - tests 1x1 - bc10liq1.R",
     "project_path": "Test zone-C/R Script - tests 1x1 - bc10liq1.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "3227789363",
     "contents": "",
     "dirty": false,
     "created": 1742746069843.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "930,31",
-        "scrollLine": "911"
+        "cursorPosition": "3,57",
+        "scrollLine": "0"
     },
-    "folds": "16|34|17|0|\n18|42|55|0|\n56|24|91|0|\n92|22|128|0|\n129|24|164|0|\n165|22|201|0|\n202|27|236|0|\n237|25|271|0|\n272|15|306|0|\n307|18|341|0|\n342|19|378|0|\n",
-    "lastKnownWriteTime": 1742750673,
+    "folds": "16|34|17|0|\n18|42|55|0|\n56|24|91|0|\n92|22|128|0|\n165|22|201|0|\n202|27|236|0|\n237|25|271|0|\n272|15|306|0|\n307|18|341|0|\n342|19|378|0|\n381|48|436|0|\n437|24|494|0|\n495|22|550|0|\n551|24|606|0|\n607|22|662|0|\n663|27|718|0|\n719|25|775|0|\n776|15|830|0|\n831|18|885|0|\n886|19|942|0|\n946|161|988|0|\n",
+    "lastKnownWriteTime": 1742804798,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1742750698397,
+    "last_content_update": 1742804798944,
     "read_only": false,
     "read_only_alternatives": []
 }
