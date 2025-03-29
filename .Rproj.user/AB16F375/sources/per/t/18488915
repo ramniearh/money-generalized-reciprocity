@@ -3,7 +3,7 @@
     "path": "~/GitHub/money-generalized-reciprocity/Test zone-C/R Script - tests 1x2  - bc10liq1.R",
     "project_path": "Test zone-C/R Script - tests 1x2  - bc10liq1.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1879988060",
     "contents": "",
     "dirty": false,
     "created": 1742804489909.0,
@@ -12,7 +12,7 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "3,79",
+        "cursorPosition": "11,16",
         "scrollLine": "0"
     },
     "folds": "17|49|120|0|\n121|21|157|0|\n160|42|215|0|\n216|55|271|0|\n272|56|328|0|\n329|26|385|0|\n386|73|545|0|\n",
